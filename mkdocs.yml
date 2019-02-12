@@ -1,0 +1,48 @@
+site_name: RingCentral Theme for MkDocs
+site_url: https://developer.ringcentral.com
+site_description: A project documentation theme for MkDocs.
+site_author: Byrne Reese
+
+repo_url: https://github.com/byrnereese/mkdocs-ringcentral/
+edit_uri: ""
+
+plugins:
+#  - git-committers:
+#      repository: ringcentral/ringcentral-api-docs
+#      branch: bootstrap-vertical-nav
+#      token: cdd674ab06f6a621af3ea3f77a240b4ab9bbff2d
+  - search
+  - bootstrap-tables
+
+theme:
+    name: ringcentral
+
+markdown_extensions:
+#  - toc:
+#     permalink: "#"
+  - markdown.extensions.admonition
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - codehilite:
+      linenums: "None"
+
+nav:
+  - Home: index.md
+  - User Guide:
+    - Installation: guide/install.md
+    - Options: guide/options.md
+  - Style Guide:
+    - Text Styles: styles/text.md
+    - Tables: styles/tables.md
+    - Syntax Highlighting: styles/code.md
+    - Admonitions: styles/admonitions.md
+  - About:
+    - License: license.md
+
+extra_css:
+    - css/extra.css
+
+copyright: Copyright &copy; 2019 <a href="https://majordojo.com/">Byrne Reese</a>
+google_analytics: 
+
