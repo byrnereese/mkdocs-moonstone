@@ -1,7 +1,6 @@
-RingCentral Theme for MkDocs
-=====================
+# Moonstone Theme for MkDocs
 
-The RingCentral theme is a clean, responsive, configurable theme for the MkDocs documentation system. It utilizes the Bootstrap CSS Framework and parts of the Material library for authoring code. 
+The Moonstone theme is a clean, responsive, configurable theme for the MkDocs documentation system. It utilizes the Bootstrap CSS Framework and parts of the Material library for authoring code. 
 
 ## Features
 

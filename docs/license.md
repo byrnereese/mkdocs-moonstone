@@ -1,9 +1,6 @@
 # License
 
-Copyright &copy; 2018 Alexander Pushkov and [contributors].
-
-Based on original work copyright &copy;&nbsp;2016 Jeff Forcier,
-&copy;&nbsp;2011 Kenneth Reitz and &copy;&nbsp;2010 Armin Ronacher.
+Copyright &copy; 2019 Byrne Reese and [contributors].
 
 Some rights reserved.
 
@@ -20,7 +17,7 @@ modification, are permitted provided that the following conditions are met:
 * The names of the contributors may not be used to endorse or promote products
   derived from this software without specific prior written permission.
 
-*This theme is provided by the copyright holders and contributors “as is” and
+*This theme is provided by the copyright holders and contributors "as is" and
 *any express or implied warranties, including, but not limited to, the implied
 *warranties of merchantability and fitness for a particular purpose are
 *disclaimed. In no event shall the copyright owner or contributors be liable for
@@ -31,4 +28,4 @@ modification, are permitted provided that the following conditions are met:
 *(including negligence or otherwise) arising in any way out of the use of this
 *theme, even if advised of the possibility of such damage.*
 
-[contributors]: https://github.com/notpushkin/mkdocs-alabaster/graphs/contributors
+[contributors]: https://github.com/byrnereese/mkdocs-moonstone/graphs/contributors
