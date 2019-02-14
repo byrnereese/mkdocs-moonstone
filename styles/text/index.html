@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      // Hack for scrolling window when linking to anchor tag with fixed nav header
+      var shiftWindow = function() { scrollBy(0, -75) };
+      window.addEventListener("hashchange", shiftWindow);
+      function load() { if (window.location.hash) shiftWindow(); }
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Byrne Reese">
+    <link rel="canonical" href="https://www.majordojo.com/styles/text/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <title>Text Styles - Moonstone Theme for MkDocs</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../css/code-styles.css" rel="stylesheet">
+    <link href="../../css/mega-menu.css" rel="stylesheet">
+    <link href="../../css/code-tabs.css" rel="stylesheet">
+    <link href="../../css/admonition.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="fonts.js"></script> 
+  </head>
+  
+  <body class="" data-spy="scroll" data-target="#toc">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="../..">Moonstone Theme for MkDocs</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav mr-auto mx-auto">
+        <li class="main-item">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="main-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="main-item">
+          <a class="nav-link" href="#">Link 3</a>
+        </li>
+      </ul>
+      
+      <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+	    <i class="fa fa-search"></i> Search
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/byrnereese/mkdocs-moonstone/"><i class="fa fa-github"></i> GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div id="content" class="container">
+      
+    <div class="row">
+      <div id="sidebar-nav" class="sidebar col-md-3"><nav id="sidenav" class="nav-collapse" data-toggle="collapse" data-target=".nav-collapse.show">
+  <div class="container">
+    <!-- Main navigation -->
+    <ul class="nav navbar-nav">
+      <li >
+        <a class="nav-link" href="../..">Home</a>
+      </li>
+      <li class="toplevel nav-item" data-toggle="collapse" data-target="#user-guide">
+        <!--<a href="#" class="nav-link">User Guide <b class="caret"></b></a>-->
+        <span class="section-title">User Guide</span>
+        <ul id="user-guide" class="collapse">
+          
+<li>
+    <a href="../../guide/install/" class="">Installation</a>
+</li>
+          
+<li>
+    <a href="../../guide/options/" class="">Options</a>
+</li>
+        </ul>
+      </li>
+      <li class="toplevel nav-item active" data-toggle="collapse" data-target="#style-guide">
+        <!--<a href="#" class="nav-link">Style Guide <b class="caret"></b></a>-->
+        <span class="section-title">Style Guide</span>
+        <ul id="style-guide" class="collapse">
+          
+<li>
+    <a href="./" class=" active">Text Styles</a>
+</li>
+          
+<li>
+    <a href="../tables/" class="">Tables</a>
+</li>
+          
+<li>
+    <a href="../code/" class="">Syntax Highlighting</a>
+</li>
+          
+<li>
+    <a href="../admonitions/" class="">Admonitions</a>
+</li>
+        </ul>
+      </li>
+      <li class="toplevel nav-item" data-toggle="collapse" data-target="#about">
+        <!--<a href="#" class="nav-link">About <b class="caret"></b></a>-->
+        <span class="section-title">About</span>
+        <ul id="about" class="collapse">
+          
+<li>
+    <a href="../../license/" class="">License</a>
+</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+      <div id="main" class="col-md-7" role="main">
+
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    
+    
+    <li class="breadcrumb-item">Style Guide</li>
+    
+    
+    <li class="breadcrumb-item active" aria-current="page">Text Styles</li>
+  </ol>
+</nav>
+
+
+<h1 id="text-styles">Text Styles</h1>
+<h2 id="body-copy">Body copy</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu libero,
+mollis sed massa vel, <em>ornare viverra ex</em>. Mauris a ullamcorper lacus. Nullam
+urna elit, malesuada eget finibus ut, ullamcorper ac tortor. Vestibulum sodales
+pulvinar nisl, pharetra aliquet est. Quisque volutpat erat ac nisi accumsan
+tempor.</p>
+<p><strong>Sed suscipit</strong>, orci non pretium pretium, quam mi gravida metus, vel
+venenatis justo est condimentum diam. Maecenas non ornare justo. Nam a ipsum
+eros. <a href="#">Nulla aliquam</a> orci sit amet nisl posuere malesuada. Proin aliquet
+nulla velit, quis ultricies orci feugiat et. <code>Ut tincidunt sollicitudin</code>
+tincidunt. Aenean ullamcorper sit amet nulla at interdum.</p>
+<h2 id="headings">Headings</h2>
+<h3 id="the-3rd-level">The 3rd level</h3>
+<h4 id="the-4th-level">The 4th level</h4>
+<h5 id="the-5th-level">The 5th level</h5>
+<h6 id="the-6th-level">The 6th level</h6>
+<h2 id="headings-with-secondary-text">Headings <small>with secondary text</small></h2>
+<h3 id="the-3rd-level-with-secondary-text">The 3rd level <small>with secondary text</small></h3>
+<h4 id="the-4th-level-with-secondary-text">The 4th level <small>with secondary text</small></h4>
+<h5 id="the-5th-level-with-secondary-text">The 5th level <small>with secondary text</small></h5>
+<h6 id="the-6th-level-with-secondary-text">The 6th level <small>with secondary text</small></h6>
+<h2 id="blockquotes">Blockquotes</h2>
+<blockquote>
+<p>Morbi eget dapibus felis. Vivamus venenatis porttitor tortor sit amet rutrum.
+  Pellentesque aliquet quam enim, eu volutpat urna rutrum a. Nam vehicula nunc
+  mauris, a ultricies libero efficitur sed. <em>Class aptent</em> taciti sociosqu ad
+  litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie
+  imperdiet consectetur.</p>
+</blockquote>
+<h3 id="blockquote-nesting">Blockquote nesting</h3>
+<blockquote>
+<p><strong>Sed aliquet</strong>, neque at rutrum mollis, neque nisi tincidunt nibh, vitae
+  faucibus lacus nunc at lacus. Nunc scelerisque, quam id cursus sodales, lorem
+  <a href="#">libero fermentum</a> urna, ut efficitur elit ligula et nunc.</p>
+<blockquote>
+<p>Mauris dictum mi lacus, sit amet pellentesque urna vehicula fringilla.
+    Ut sit amet placerat ante. Proin sed elementum nulla. Nunc vitae sem odio.
+    Suspendisse ac eros arcu. Vivamus orci erat, volutpat a tempor et, rutrum.
+    eu odio.</p>
+<blockquote>
+<p><code>Suspendisse rutrum facilisis risus</code>, eu posuere neque commodo a.
+      Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed nec leo
+      bibendum, sodales mauris ut, tincidunt massa.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h3 id="other-content-blocks">Other content blocks</h3>
+<blockquote>
+<p>Vestibulum vitae orci quis ante viverra ultricies ut eget turpis. Sed eu
+  lectus dapibus, eleifend nulla varius, lobortis turpis. In ac hendrerit nisl,
+  sit amet laoreet nibh.
+  <div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">_extends</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">target</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">source</span> <span class="o">=</span> <span class="nx">arguments</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">key</span> <span class="k">in</span> <span class="nx">source</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">target</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="nx">source</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="hll">  <span class="k">return</span> <span class="nx">target</span><span class="p">;</span>
+</span><span class="p">};</span>
+</pre></div></p>
+<blockquote>
+<p>Praesent at <code>:::js return target</code>, sodales nibh vel, tempor felis. Fusce
+      vel lacinia lacus. Suspendisse rhoncus nunc non nisi iaculis ultrices.
+      Donec consectetur mauris non neque imperdiet, eget volutpat libero.</p>
+</blockquote>
+</blockquote>
+<h2 id="lists">Lists</h2>
+<h3 id="unordered-lists">Unordered lists</h3>
+<ul>
+<li>
+<p>Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus tellus
+  non sem sollicitudin, quis rutrum leo facilisis. Nulla tempor lobortis orci,
+  at elementum urna sodales vitae. In in vehicula nulla, quis ornare libero.</p>
+<ul>
+<li>Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.</li>
+<li>Nam vulputate tincidunt fringilla.</li>
+<li>Nullam dignissim ultrices urna non auctor.</li>
+</ul>
+</li>
+<li>
+<p>Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin ut
+  eros sed sapien ullamcorper consequat. Nunc ligula ante, fringilla at aliquam
+  ac, aliquet sed mauris.</p>
+</li>
+<li>
+<p>Nulla et rhoncus turpis. Mauris ultricies elementum leo. Duis efficitur
+  accumsan nibh eu mattis. Vivamus tempus velit eros, porttitor placerat nibh
+  lacinia sed. Aenean in finibus diam.</p>
+</li>
+</ul>
+<h3 id="ordered-lists">Ordered lists</h3>
+<ol>
+<li>
+<p>Integer vehicula feugiat magna, a mollis tellus. Nam mollis ex ante, quis
+  elementum eros tempor rutrum. Aenean efficitur lobortis lacinia. Nulla
+  consectetur feugiat sodales.</p>
+</li>
+<li>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+  ridiculus mus. Aliquam ornare feugiat quam et egestas. Nunc id erat et quam
+  pellentesque lacinia eu vel odio.</p>
+<ol>
+<li>
+<p>Vivamus venenatis porttitor tortor sit amet rutrum. Pellentesque aliquet
+  quam enim, eu volutpat urna rutrum a. Nam vehicula nunc mauris, a
+  ultricies libero efficitur sed.</p>
+<ol>
+<li>Mauris dictum mi lacus</li>
+<li>Ut sit amet placerat ante</li>
+<li>Suspendisse ac eros arcu</li>
+</ol>
+</li>
+<li>
+<p>Morbi eget dapibus felis. Vivamus venenatis porttitor tortor sit amet
+  rutrum. Pellentesque aliquet quam enim, eu volutpat urna rutrum a. Sed
+  aliquet, neque at rutrum mollis, neque nisi tincidunt nibh.</p>
+</li>
+<li>
+<p>Pellentesque eget <code>:::js var _extends</code> ornare tellus, ut gravida mi.
+<div class="codehilite"><pre><span></span><span class="hll"><span class="kd">var</span> <span class="nx">_extends</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">target</span><span class="p">)</span> <span class="p">{</span>
+</span>  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">source</span> <span class="o">=</span> <span class="nx">arguments</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">key</span> <span class="k">in</span> <span class="nx">source</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">target</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="nx">source</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">target</span><span class="p">;</span>
+<span class="p">};</span>
+</pre></div></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Vivamus id mi enim. Integer id turpis sapien. Ut condimentum lobortis
+  sagittis. Aliquam purus tellus, faucibus eget urna at, iaculis venenatis
+  nulla. Vivamus a pharetra leo.</p>
+</li>
+</ol>
+<h3 id="definition-lists">Definition lists</h3>
+<p>Lorem ipsum dolor sit amet</p>
+<p>:   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+    tellus non sem sollicitudin, quis rutrum leo facilisis. Nulla tempor
+    lobortis orci, at elementum urna sodales vitae. In in vehicula nulla.</p>
+<div class="codehilite"><pre><span></span>Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
+Nam vulputate tincidunt fringilla.
+Nullam dignissim ultrices urna non auctor.
+</pre></div>
+
+
+<p>Cras arcu libero</p>
+<p>:   Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
+    ut eros sed sapien ullamcorper consequat. Nunc ligula ante, fringilla at
+    aliquam ac, aliquet sed mauris.</p>
+<h2 id="horizontal-rules">Horizontal rules</h2>
+<p>Aenean in finibus diam. Duis mollis est eget nibh volutpat, fermentum aliquet
+dui mollis. Nam vulputate tincidunt fringilla. Nullam dignissim ultrices urna
+non auctor.</p>
+<hr />
+<p>Integer vehicula feugiat magna, a mollis tellus. Nam mollis ex ante, quis
+elementum eros tempor rutrum. Aenean efficitur lobortis lacinia. Nulla
+consectetur feugiat sodales.</p>
+
+<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+  <li class="last-updated-holder displayDate loading">
+    <span class="last-updated-text">Last updated:</span>
+    <time role="presentation" datetime="2018-10-25T00:00:00.000Z" data-article-date-source="ms.date"></time>
+  </li>
+<!--
+  <li class="readingTime">
+    2 minutes to read
+  </li>
+-->
+  <li class="contributors-holder">
+    <span class="contributors-text">Contributors</span>
+    <ul class="contributors" data-bi-name="contributors"></ul>
+  </li>
+</ul>
+</div>
+      <div id="sidebar-toc" class="sidebar col-md-2">
+	<nav id="toc" data-toggle="toc" class="sticky-top sticky-offset"></nav>
+      </div>
+    </div>
+    </div><footer class="col-md-12">
+  <nav class="container">
+    <div class="row">
+      <div class="col-12">
+	<ul class="nav flex-row ml-md-auto d-none d-md-flex pull-right">
+	  <li class="nav-item"><a class="nav-link" href="#">License</a></li>
+	  <li class="nav-item"><a class="nav-link" href="#">GitHub Home</a></li>
+	</ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+	<p>&copy;Copyright &copy; 2019 <a href="https://majordojo.com/">Byrne Reese</a></p>
+      </div>
+      <div class="col-6">
+	<ul class="nav flex-row ml-md-auto d-none d-md-flex pull-right">
+	  <li><a class="nav-link footer-image-link footer-image-link-facebook" href="#">
+	      <i class="fa fa-facebook"></i></a></li>
+	  <li><a class="nav-link footer-image-link footer-image-link-twitter" href="#">
+	      <i class="fa fa-twitter"></i></a></li>
+	  <li><a class="nav-link footer-image-link footer-image-link-linkedin" href="#">
+	      <i class="fa fa-linkedin"></i></a></li>
+	  <li><a class="nav-link footer-image-link footer-image-link-youtube" href="#">
+	      <i class="fa fa-youtube"></i></a></li>
+	</ul>
+      </div>
+  </nav>
+</footer>
+    <script>
+      var base_url = "../..",
+          shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" defer></script>
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js" defer></script>
+    <script src="../../js/base.js" defer></script>
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" data-toc-skip>Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+  </body>
+</html>
