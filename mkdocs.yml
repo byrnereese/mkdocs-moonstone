@@ -1,25 +1,23 @@
-site_name: RingCentral Theme for MkDocs
-site_url: https://developer.ringcentral.com
+site_name: Moonstone Theme for MkDocs
+site_url: https://www.majordojo.com
 site_description: A project documentation theme for MkDocs.
 site_author: Byrne Reese
 
-repo_url: https://github.com/byrnereese/mkdocs-ringcentral/
+repo_url: https://github.com/byrnereese/mkdocs-moonstone/
 edit_uri: ""
 
 plugins:
 #  - git-committers:
-#      repository: ringcentral/ringcentral-api-docs
-#      branch: bootstrap-vertical-nav
-#      token: cdd674ab06f6a621af3ea3f77a240b4ab9bbff2d
+#      repository: 
+#      branch: 
+#      token: 
   - search
   - bootstrap-tables
 
 theme:
-    name: ringcentral
+    name: moonstone
 
 markdown_extensions:
-#  - toc:
-#     permalink: "#"
   - markdown.extensions.admonition
   - pymdownx.details
   - pymdownx.keys

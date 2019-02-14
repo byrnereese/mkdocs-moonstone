@@ -61,13 +61,8 @@ The [admonitions markdown extension](https://squidfunk.github.io/mkdocs-material
 
 ??? example "Show Detailed Instructions"
     
-    1. [Login or create an account](https://developer.ringcentral.com/login.html#/) if you have not done so already.
-    2. Go to Console/Apps and click 'Create App' button.
-    3. Give your app a name and description, then click Next.
-    4. On the second page of the create app wizard enter the following:
-         * Select 'Private' for Application Type.
-         * Select 'Server-only (No UI)' for Platform Type.
-    5. On the third page of the create app wizard, select the following permissions:
-         * RingOut
-    6. We are using Password Flow authentication, so leave "OAuth Redirect URI" blank.
+    1. Do something. 
+    2. Watch Star Wars.
+    3. Be kind to someone. 
+
 

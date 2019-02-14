@@ -1,4 +1,4 @@
-# Config options for 'ringcentral' theme
+# Config options for 'moonstone' theme
 
 extends: bootstrap4
 suppress_nextprev: true

@@ -3,12 +3,12 @@ from setuptools import setup, find_packages
 VERSION = '0.1.0'
 
 setup(
-    name="mkdocs-ringcentral",
+    name="mkdocs-moonstone",
     version=VERSION,
-    url='https://git.ringcentral.com/byrnereese/mkdocs-ringcentral/',
-    description='RingCentral theme for MkDocs',
+    url='https://github.com/byrnereese/mkdocs-moonstone/',
+    description='Moonstone theme for MkDocs',
     author='Byrne Reese',
-    author_email='byrne.reese@ringcentral.com',
+    author_email='byrne@majordojo.com',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -21,7 +21,7 @@ setup(
     python_requires='>=2.7.9,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*',
     entry_points={
         'mkdocs.themes': [
-            'ringcentral = mkdocs_ringcentral',
+            'moonstone = mkdocs_moonstone',
         ]
     },
     zip_safe=False
