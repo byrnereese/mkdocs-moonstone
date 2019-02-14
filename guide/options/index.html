@@ -42,6 +42,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse">
+<!--
       <ul class="nav navbar-nav mr-auto mx-auto">
         <li class="main-item">
           <a class="nav-link" href="#">Link 1</a>
@@ -53,6 +54,7 @@
           <a class="nav-link" href="#">Link 3</a>
         </li>
       </ul>
+-->
       
       <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
         <li class="nav-item">
@@ -143,92 +145,12 @@
 
 
 <h1 id="theme-options">Theme Options</h1>
-<h2 id="extralogo"><code>extra.logo</code></h2>
-<p>Relative path (from <code>$PROJECT/docs/</code>) to a logo image, which will appear in the upper left corner above the name of the project.</p>
-<blockquote>
-<p>If logo is not set, your project name setting (from the MkDocs config) will be used in a text header instead. This preserves a link back to your homepage from inner doc pages.</p>
-</blockquote>
-<h2 id="extralogo_name"><code>extra.logo_name</code></h2>
-<p>Set to <code>true</code> to insert your site's <code>project</code> name under the logo image as text. Useful if your logo doesn't include the project name itself. Defaults to <code>false</code>.</p>
-<h2 id="extralogo_title"><code>extra.logo_title</code></h2>
-<p>Logo's title attribute. Default: your <code>site_name</code>.</p>
-<h2 id="extrainclude_toc"><code>extra.include_toc</code></h2>
-<p>Boolean, whether to include TOC in sidebar navigation or not. Default: false.</p>
-<h2 id="extraextra_nav_links"><code>extra.extra_nav_links</code></h2>
-<p>A dict of navigation links. Example:</p>
-<div class="codehilite"><pre><span></span><span class="nt">extra</span><span class="p">:</span>
-  <span class="nt">extra_nav_links</span><span class="p">:</span>
-    <span class="nt">Fork me on GitHub</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/iamale/rock-cli</span>
-</pre></div>
-
-<h2 id="extrashow_powered_by"><code>extra.show_powered_by</code></h2>
-<p>Show “Powered by” message, mentioning MkDocs and this theme. Default: true.</p>
-<h2 id="extrasidebars"><code>extra.sidebars</code></h2>
-<p>Specify sidebars shown in the left menu. By default, the following ones are
-shown, top to bottom:</p>
-<ul>
-<li><code>about</code>: logo and title (<code>sidebars/about.html</code>)</li>
-<li><code>toc</code>: current page table of contents (<code>sidebars/toc.html</code>)</li>
-<li><code>related</code>: links to the previous and next pages (<code>sidebars/related.html</code>)</li>
-<li><code>search</code>: quick search (<code>sidebars/search.html</code>)</li>
-</ul>
-<p>To add your own sidebar, put its template in <code>$THEME_DIR/sidebars</code> and add its
-name to <code>extra.sidebars</code>:</p>
-<div class="codehilite"><pre><span></span><span class="nt">extra</span><span class="p">:</span>
-  <span class="nt">sidebars</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">about</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">toc</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">my-awesome-sidebar</span> <span class="c1"># corresponds to `$THEME_DIR/sidebars/my-awesome-sidebar.html`</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">related</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">search</span>
-</pre></div>
-
-<h2 id="extrahomepage_sidebars"><code>extra.homepage_sidebars</code></h2>
-<p>List of sidebar names shown in the left menu <em>on the homepage only</em>.
-By default, the following sidebars are shown, top to bottom:</p>
-<ul>
-<li><code>about</code>: logo and title (<code>sidebars/about.html</code>)</li>
-<li><code>search</code>: quick search (<code>sidebars/search.html</code>)</li>
-</ul>
-<p>As you see, homepage is a little special as it doesn't have <code>toc</code> and <code>related</code>
-sidebars by default. The option <code>extra.homepage_sidebars</code> lets you easily
-override this behavior:</p>
-<div class="codehilite"><pre><span></span><span class="nt">extra</span><span class="p">:</span>
-  <span class="nt">homepage_sidebars</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">about</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">toc</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">related</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">search</span>
-</pre></div>
-
-<h2 id="navigation-sidebar">Navigation sidebar</h2>
-<p>The table of contents sidebar includes only the current page's headings. If you
-want to have the global navigation in the menu, use an alternative sidebar
-called <code>navigation</code>:</p>
-<div class="codehilite"><pre><span></span><span class="nt">extra</span><span class="p">:</span>
-  <span class="nt">sidebars</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">about</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">navigation</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">related</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">search</span>
-</pre></div>
-
-<p>This is a port of the original Alabaster theme's sidebar of the same name.</p>
-<h3 id="example">Example</h3>
-<div class="codehilite"><pre><span></span><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">rock-cli</span>
-<span class="nt">theme</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">alabaster</span>
-<span class="nt">copyright</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2016 Alexander Pushkov</span>
-
-<span class="nt">markdown_extensions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">toc</span><span class="p">:</span>
-      <span class="nt">permalink</span><span class="p">:</span> <span class="s">&quot;¶&quot;</span>
-
-<span class="nt">extra</span><span class="p">:</span>
-  <span class="nt">logo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">logo.png</span>
-  <span class="nt">logo_title</span><span class="p">:</span> <span class="s">&quot;Rocketbank</span><span class="nv"> </span><span class="s">logo&quot;</span>
-  <span class="nt">include_toc</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
-  <span class="nt">extra_nav_links</span><span class="p">:</span>
-    <span class="nt">Fork me on GitHub</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/iamale/rock-cli</span>
+<p>There are no theme options at this time.</p>
+<h2 id="customization">Customization</h2>
+<p>The theme can be customized in the standard mkdocs fashion by overriding templates. Just specify the <code>custom_dir</code> parameter under the <code>theme</code> as so:</p>
+<div class="codehilite"><pre><span></span><span class="n">theme</span><span class="o">:</span>
+  <span class="n">name</span><span class="o">:</span> <span class="n">moonstone</span>
+  <span class="n">custom_dir</span><span class="o">:</span> <span class="s1">&#39;theme/&#39;</span>
 </pre></div>
 
 <ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
