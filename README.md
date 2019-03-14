@@ -17,6 +17,7 @@ After the theme is installed, edit your [mkdocs.yml] file and set the theme
 ## Config Parameters
 
 * `suppress_nextprev` - (default: true) Toggles the display of the common "Next" and "Prev" page links in the header.
+* `fluid_layout` - (default: true) Toggles the layout to be a fluid (full-width) display, or a fixed-width.
 
 ## Special Features
 

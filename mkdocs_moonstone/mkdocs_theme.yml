@@ -1,6 +1,7 @@
 # Config options for 'moonstone' theme
 
 extends: bootstrap4
+fluid_layout: True
 suppress_nextprev: true
 highlightjs: true
 hljs_languages:

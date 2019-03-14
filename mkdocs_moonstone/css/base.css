@@ -336,6 +336,16 @@ ul.nav li.main {
     }
 }
 
+@media (min-width: 576px) {
+     .container-fluid #sidebar-nav {
+          max-width: 285px;
+     }
+     .container-fluid #sidebar-toc {
+          max-width: 190px;
+     }
+}
+
+
 .btn:visited {
     color: white;
 }

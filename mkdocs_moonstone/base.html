@@ -68,9 +68,9 @@
     {% include "main-nav.html" %}
     
     {%- set main_content %}
-    <div class="row">
+    <div class="row flex-nowrap">
       <div id="sidebar-nav" class="sidebar col-md-3">{% include "side-nav.html" %}</div>
-      <div id="main" class="col-md-7" role="main">{% include "content.html" %}</div>
+      <div id="main" class="{%- if config.theme.fluid_layout -%}col{%- else -%}col-md-7{%- endif -%}" role="main">{% include "content.html" %}</div>
       <div id="sidebar-toc" class="sidebar col-md-2">
 	<nav id="toc" data-toggle="toc" class="sticky-top sticky-offset"></nav>
       </div>
@@ -86,7 +86,7 @@
     </div>
     {%- endif -%}
     {%- endblock %}
-    <div id="content" class="container">
+    <div id="content"{%- if not config.theme.fluid_layout -%} class="container"{%- else -%} class="container-fluid"{%- endif -%}>
       {{ main_content }}
     </div>
     
