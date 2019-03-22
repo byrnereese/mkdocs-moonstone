@@ -1,12 +1,12 @@
 # MkDocs Bootstrap4 Theme
 
-This project provides a Bootstrap v4.0+ theme is for the [MkDocs] project.
+This project provides a theme optimized for developer and API documentation to be used with [MkDocs] projects.
 
 ## Installation
 
 Install the theme with pip:
 
-    pip install mkdocs-bootstrap4
+    pip install mkdocs-moonstone
 
 After the theme is installed, edit your [mkdocs.yml] file and set the theme
 [name] to `bootstrap`:
