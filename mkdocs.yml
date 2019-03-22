@@ -11,14 +11,14 @@ plugins:
       repository: byrnereese/mkdocs-moonstone
       branch: master
       token:
-        !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
+        !!python/object/apply:os.getenv ["MOONSTONE_GIT_COMMITTERS_APIKEY"]
   - search
   - bootstrap-tables
 
 theme:
   name: moonstone
   custom_dir: 'custom_theme/'
-    
+  fluid_layout: False
 
 markdown_extensions:
   - markdown.extensions.admonition
@@ -32,12 +32,15 @@ nav:
   - Home: index.md
   - User Guide:
     - Installation: guide/install.md
-    - Options: guide/options.md
+    - Theme Customization: guide/options.md
+    - Page-level Customization: guide/page-options.md
   - Style Guide:
     - Text Styles: styles/text.md
     - Tables: styles/tables.md
     - Syntax Highlighting: styles/code.md
     - Admonitions: styles/admonitions.md
+  - Support:
+    - Bug Reports & Feature Requests: support.md
   - About:
     - License: license.md
 
