@@ -1,6 +1,6 @@
 # MkDocs Bootstrap4 Theme
 
-This project provides a theme optimized for developer and API documentation to be used with [MkDocs] projects.
+This project provides a theme optimized for developer and API documentation to be used with [MkDocs](https://www.mkdocs.org/) projects.
 
 ## Installation
 
