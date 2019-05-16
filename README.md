@@ -1,4 +1,4 @@
-# MkDocs Bootstrap4 Theme
+# MkDocs Moonstone Theme
 
 This project provides a theme optimized for developer and API documentation to be used with [MkDocs](https://www.mkdocs.org/) projects.
 
@@ -9,7 +9,7 @@ Install the theme with pip:
     pip install mkdocs-moonstone
 
 After the theme is installed, edit your [mkdocs.yml] file and set the theme
-[name] to `bootstrap`:
+[name] to `moonstone`:
 
     theme:
         name: moonstone
