@@ -69,7 +69,7 @@
     {% include "main-nav.html" %}
     
     {%- set main_content %}
-    <div class="row flex-nowrap">
+    <div class="row">
       <div id="sidebar-nav" class="sidebar col-md-3">{% include "side-nav.html" %}</div>
       <div id="main" class="{%- if config.theme.fluid_layout -%}col{%- else -%}col-md-7{%- endif -%}" role="main">{% include "content.html" %}</div>
       <div id="sidebar-toc" class="sidebar col-md-2">
