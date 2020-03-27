@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.1.7'
+VERSION = '0.1.8'
 
 setup(
     name="mkdocs-moonstone",
@@ -13,9 +13,9 @@ setup(
     include_package_data=True,
     install_requires=[
         'mkdocs>=1.0',
-        'mkdocs-git-committers-plugin>=0.1.3',
-        'mkdocs-bootstrap4>=0.1.2',
-        'mkdocs-bootstrap-tables-plugin>=0.1.0',
+        'mkdocs-git-committers-plugin>=0.1.9',
+        'mkdocs-bootstrap4>=0.1.4',
+        'mkdocs-bootstrap-tables-plugin>=0.1.1',
         'mkdocs-material>=3.0'
     ],
     python_requires='>=2.7.9,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*',
