@@ -1,3 +1,4 @@
+.tabbed-set,
 .superfences-tabs {
   display: flex;
   position: relative;
@@ -9,10 +10,12 @@
   margin-bottom: 20px;
 }
 
+.tabbed-set .highlight,
 .superfences-tabs .highlight {
   background: #ddd;
 }
 
+.tabbed-set .tabbed-content,
 .superfences-tabs .superfences-content {
   display: none;
   order: 99;
@@ -20,6 +23,7 @@
   border-top: 1px solid #CCC;
 }
 
+.tabbed-set label,
 .superfences-tabs label {
     margin: 0;
     width: auto;
@@ -28,33 +32,40 @@
     padding: 1.2rem 1.6rem;
 }
 
+.tabbed-set input,
 .superfences-tabs input {
   position: absolute;
   opacity: 0;
 }
 
+.tabbed-set input:nth-child(n+1),
 .superfences-tabs input:nth-child(n+1) {
   color: #333333;
 }
 
+.tabbed-set input:nth-child(n+1):checked + label,
 .superfences-tabs input:nth-child(n+1):checked + label {
     color: #FF5252;
 }
 
+.tabbed-set input:nth-child(n+1):checked + label + .tabbed-content,
 .superfences-tabs input:nth-child(n+1):checked + label + .superfences-content {
     display: block;
 }
 
+.tabbed-set .highlight,
 .superfences-tabs .highlight {
   background: #ddd;
 }
 
+.tabbed-set .tabbed-content,
 .superfences-tabs .superfences-content {
   display: none;
   order: 99;
   width: 100%;
 }
 
+.tabbed-set label,
 .superfences-tabs label {
   width: auto;
   margin: 0;
@@ -63,24 +74,29 @@
   cursor: pointer;
 }
 
+.tabbed-set input,
 .superfences-tabs input {
   position: absolute;
   opacity: 0;
 }
 
+.tabbed-set input:nth-child(n+1),
 .superfences-tabs input:nth-child(n+1) {
   color: #333333;
 }
 
+.tabbed-set input:nth-child(n+1):checked + label,
 .superfences-tabs input:nth-child(n+1):checked + label {
     color: #03a9f4;
     border-bottom: 2px solid #03a9f4;
 }
 
+.tabbed-set input:nth-child(n+1):checked + label + .tabbed-content,
 .superfences-tabs input:nth-child(n+1):checked + label + .superfences-content {
     display: block;
 }
 
+.tabbed-set .codehilite,
 .superfences-tabs .codehilite {
     margin-bottom: 0;
 }
