@@ -203,7 +203,7 @@
   .codehilite code, .highlight code {
     display: block;
     margin: 0;
-    padding: 1.05rem 1.2rem;
+    padding: 1.05rem 0.5rem;
     background-color: transparent;
     overflow: auto;
     vertical-align: top; }
