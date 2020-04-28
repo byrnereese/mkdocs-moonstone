@@ -192,7 +192,7 @@
 
 .codehilite, .highlight {
   position: relative;
-  margin: 1em 0;
+/*  margin: 1em 0;*/
   padding: 0;
   border-radius: 0.2rem;
   background-color: rgba(236, 236, 236, 0.5);
