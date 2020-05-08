@@ -150,6 +150,9 @@ footer .footer-image-link i {
     font-weight: 400;
     text-transform: uppercase;
 }
+#sidebar-nav .nav-item > a.nav-link {
+    padding-left: 0;
+}
 /* Left Sidebar Nav END */
 
 /* Right Sidebar ToC Nav BEGIN */
