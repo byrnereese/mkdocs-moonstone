@@ -13,8 +13,8 @@ setup(
     include_package_data=True,
     install_requires=[
         'mkdocs>=1.0',
-        'mkdocs-git-committers-plugin>=0.1.10',
-        'mkdocs-bootstrap4>=0.1.4',
+        'mkdocs-git-committers-plugin>=0.2.0',
+        'mkdocs-bootstrap4>=0.1.5',
         'mkdocs-bootstrap-tables-plugin>=0.1.1',
         'mkdocs-material>=3.0'
     ],
