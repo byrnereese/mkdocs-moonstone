@@ -1,3 +1,50 @@
+@page {
+    size: 8.5in 11in portrait;
+    margin: 25mm 10mm 25mm 10mm;
+    counter-increment: page;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    white-space: pre;
+    color: grey;
+}
+
+@media print {
+    article {
+        width: 7.25in !important;
+    }
+    .jumbotron .pdf-order { display: none; }
+    #doc-cover .upper { margin-bottom: 50px; margin-top: -50px; }
+    #doc-toc .pdf-order::after {
+	content: "";
+	white-space: auto;
+    }
+    #doc-toc .pdf-order {
+	font-size: inherit;
+    }
+    .pdf-order::after {
+	content: "\A";
+	white-space: pre;
+    }
+    .pdf-order {
+	font-size: 12px;
+    }
+    article h1 > .pdf-order,
+    article h2 > .pdf-order,
+    article h3 > .pdf-order {
+	padding-left: 0 !important;
+    }
+    article .page-metadata,
+    article ol.breadcrumb { display: none }
+    blockquote {
+	margin-left: 30px;
+	border-left: 3px solid grey;
+	padding-left: 20px;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 0;
+    }
+}
+
+
 body {
     font-family: "Lato",Helvetica,Arial,sans-serif;
     font-weight: 200;
